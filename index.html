@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convenient Store</title>
+  <link rel="stylesheet" href="StoreStyle.css">
+</head>
+<body>
+  <header class="custom-header">
+    <h1 class="store-title">Aesir Merch.<img src="img/logo.png" class="store-logo"></h1>
+    <a href="StockManagement.html" class="button">Stock Management</a>
+  </header>  
+  <main>
+    <section id="jeans">
+      <h2>Jeans</h2>
+      <div class="item" data-stock="10">
+        <img src="img/blue_jeans.jpg" alt="Blue Jeans">
+        <p>Blue Jeans</p>
+        <p class="price">₱500.00</p>
+        <p class="stock">Stock: <span id="blue-jeans-stock">10</span></p>
+        <button onclick="addToCart('Blue Jeans', 500, 'blue-jeans-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/black_jeans.jpg" alt="Black Jeans">
+        <p>Black Jeans</p>
+        <p class="price">₱500.00</p>
+        <p class="stock">Stock: <span id="black-jeans-stock">10</span></p>
+        <button onclick="addToCart('Black Jeans', 500, 'black-jeans-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/skinny_jeans.jpg" alt="Skinny Jeans">
+        <p>Skinny Jeans</p>
+        <p class="price">₱500.00</p>
+        <p class="stock">Stock: <span id="skinny-jeans-stock">10</span></p>
+        <button onclick="addToCart('Skinny Jeans', 500, 'skinny-jeans-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/distressed_jeans.jpg" alt="Distressed Jeans">
+        <p>Distressed Jeans</p>
+        <p class="price">₱500.00</p>
+        <p class="stock">Stock: <span id="distressed-jeans-stock">10</span></p>
+        <button onclick="addToCart('Distressed Jeans', 500, 'distressed-jeans-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/denim_shorts.jpg" alt="Denim Shorts">
+        <p>Denim Shorts</p>
+        <p class="price">₱400.00</p>
+        <p class="stock">Stock: <span id="denim-shorts-stock">10</span></p>
+        <button onclick="addToCart('Denim Shorts', 400, 'denim-shorts-stock')">Add to Cart</button>
+      </div>
+    </section>
+    <section id="shirts">
+      <h2>Shirts</h2>
+      <div class="item" data-stock="10">
+        <img src="img/graphic_tshirt.jpg" alt="Graphic T-shirt">
+        <p>Graphic T-shirt</p>
+        <p class="price">₱350.00</p>
+        <p class="stock">Stock: <span id="graphic-tshirt-stock">10</span></p>
+        <button onclick="addToCart('Graphic T-shirt', 350, 'graphic-tshirt-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/white_tshirt.jpg" alt="Plain White T-shirt">
+        <p>Plain White T-shirt</p>
+        <p class="price">₱300.00</p>
+        <p class="stock">Stock: <span id="white-tshirt-stock">10</span></p>
+        <button onclick="addToCart('Plain White T-shirt', 300, 'white-tshirt-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/vneck_tshirt.jpg" alt="V-neck T-shirt">
+        <p>V-neck T-shirt</p>
+        <p class="price">₱300.00</p>
+        <p class="stock">Stock: <span id="vneck-tshirt-stock">10</span></p>
+        <button onclick="addToCart('V-neck T-shirt', 300, 'vneck-tshirt-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/polo_shirt.jpg" alt="Polo Shirt">
+        <p>Polo Shirt</p>
+        <p class="price">₱350.00</p>
+        <p class="stock">Stock: <span id="polo-shirt-stock">10</span></p>
+        <button onclick="addToCart('Polo Shirt', 350, 'polo-shirt-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/longsleeve_tshirt.jpg" alt="Long-sleeve T-shirt">
+        <p>Long-sleeve T-shirt</p>
+        <p class="price">₱375.00</p>
+        <p class="stock">Stock: <span id="longsleeve-tshirt-stock">10</span></p>
+        <button onclick="addToCart('Long-sleeve T-shirt', 375, 'longsleeve-tshirt-stock')">Add to Cart</button>
+      </div>
+    </section>
+    <section id="perfumes">
+      <h2>Perfumes</h2>
+      <div class="item" data-stock="10">
+        <img src="img/calvin_klein_perfume.jpg" alt="Calvin Klein Perfume">
+        <p>Calvin Klein Perfume</p>
+        <p class="price">₱1995.00</p>
+        <p class="stock">Stock: <span id="calvin-klein-perfume-stock">10</span></p>
+        <button onclick="addToCart('Calvin Klein Perfume', 1995, 'calvin-klein-perfume-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/chanel_perfume.jpg" alt="Chanel Perfume">
+        <p>Chanel Perfume</p>
+        <p class="price">₱2499.00</p>
+        <p class="stock">Stock: <span id="chanel-perfume-stock">10</span></p>
+        <button onclick="addToCart('Chanel Perfume', 2499, 'chanel-perfume-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/dolce_gabbana_perfume.jpg" alt="Dolce & Gabbana Perfume">
+        <p>Dolce & Gabbana Perfume</p>
+        <p class="price">₱2999</p>
+        <p class="stock">Stock: <span id="dolce-gabbana-perfume-stock">10</span></p>
+        <button onclick="addToCart('Dolce & Gabbana Perfume', 2999, 'dolce-gabbana-perfume-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/hugo_boss_perfume.jpg" alt="Hugo Boss Perfume">
+        <p>Hugo Boss Perfume</p>
+        <p class="price">₱1899</p>
+        <p class="stock">Stock: <span id="hugo-boss-perfume-stock">10</span></p>
+        <button onclick="addToCart('Hugo Boss Perfume', 1899, 'hugo-boss-perfume-stock')">Add to Cart</button>
+      </div>
+    </section>
+    <section id="sando">
+      <h2>Sando</h2>
+      <div class="item" data-stock="10">
+        <img src="img/striped_tank_top.jpg" alt="Striped Tank Top">
+        <p>Striped Tank Top</p>
+        <p class="price">₱250.00</p>
+        <p class="stock">Stock: <span id="striped-tank-top-stock">10</span></p>
+        <button onclick="addToCart('Striped Tank Top', 250, 'striped-tank-top-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/white_tank_top.jpg" alt="White Tank Top">
+        <p>White Tank Top</p>
+        <p class="price">₱250.00</p>
+        <p class="stock">Stock: <span id="white-tank-top-stock">10</span></p>
+        <button onclick="addToCart('White Tank Top', 250, 'white-tank-top-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/black_tank_top.jpg" alt="Black Tank Top">
+        <p>Black Tank Top</p>
+        <p class="price">₱250.00</p>
+        <p class="stock">Stock: <span id="black-tank-top-stock">10</span></p>
+        <button onclick="addToCart('Black Tank Top', 250, 'black-tank-top-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/sportswear_tank_top.jpg" alt="Sportswear Tank Top">
+        <p>Sportswear Tank Top</p>
+        <p class="price">₱333.00</p>
+        <p class="stock">Stock: <span id="sportswear-tank-top-stock">10</span></p>
+        <button onclick="addToCart('Sportswear Tank Top', 333, 'sportswear-tank-top-stock')">Add to Cart</button>
+      </div>
+    </section>    
+    <section id="toys">
+      <h2>Toys</h2>
+      <div class="item" data-stock="10">
+        <img src="img/teddy_bear.jpg" alt="Teddy Bear">
+        <p>Teddy Bear</p>
+        <p class="price">₱499</p>
+        <p class="stock">Stock: <span id="teddy-bear-stock">10</span></p>
+        <button onclick="addToCart('Teddy Bear', 499, 'teddy-bear-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/yo-yo.jpg" alt="Yo-yo">
+        <p>Yo-yo</p>
+        <p class="price">₱200</p>
+        <p class="stock">Stock: <span id="yo-yo-stock">10</span></p>
+        <button onclick="addToCart('Yo-yo', 200, 'yo-yo-stock')">Add to Cart</button>
+      </div>
+      <div class="item" data-stock="10">
+        <img src="img/remote_control_car.jpg" alt="Remote Control Car">
+        <p>Remote Control Car</p>
+        <p class="price">₱350</p>
+        <p class="stock">Stock: <span id="remote-control-car-stock">10</span></p>
+        <button onclick="addToCart('Remote Control Car', 350, 'remote-control-car-stock')">Add to Cart</button>
+      </div>
+    </section>
+    <section>
+      <aside>
+        <h2>Cart</h2>
+        <ul id="cart">
+
+        </ul>
+        <p>Total: <span id="total">₱0.00</span></p>
+        <button onclick="checkout(event)">Checkout</button>
+        <div>
+          <p>Select Discount:</p>
+          <input type="radio" id="noneDiscount" name="discount" value="0" checked>
+          <label for="noneDiscount">None</label><br>
+          <input type="radio" id="studentDiscount" name="discount" value="10">
+          <label for="studentDiscount">Student (10%)</label><br>
+          <input type="radio" id="seniorDiscount" name="discount" value="20">
+          <label for="seniorDiscount">Senior (20%)</label><br>
+          <input type="radio" id="pwdDiscount" name="discount" value="30">
+          <label for="pwdDiscount">PWD (30%)</label><br>
+          <button onclick="applyDiscount()">Apply Discount</button>
+      </div>
+      </aside>
+  </section>
+  </main>
+  <script src="Store.js"></script>
+</body>
+</html>
